@@ -14,7 +14,7 @@ The selection and evaluation process for cross-modality consistency in MMCBench 
 
 ### Overview of the Selection and Evaluation Process 📌
 
-![Selection and Evaluation Process](figs/pipeline.pdf)
+![Selection and Evaluation Process](figs/pipeline.svg)
 
 ## Model Resilience Analysis 🛡️
 
@@ -22,7 +22,7 @@ We present radar charts depicting the relative consistency scores of selected mo
 
 ### Radar Charts of Model Consistency Scores 🎯
 
-![Radar Charts](figs/radar.pdf)
+![Radar Charts](figs/radar.svg)
 
 ## Repository Structure 📂
 
