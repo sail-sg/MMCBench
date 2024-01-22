@@ -14,7 +14,7 @@ The selection and evaluation process for cross-modality consistency in MMCBench 
 
 ### Overview of the Selection and Evaluation Process 📌
 
-![Selection and Evaluation Process](figs/pipeline.png)
+![Selection and Evaluation Process](figs/mmcbench.png)
 
 ## Model Resilience Analysis 🛡️
 
