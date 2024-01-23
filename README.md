@@ -1,5 +1,7 @@
 # MMCBench: Benchmarking Large Multimodal Models against Common Corruptions 🚀
 
+Code for the paper [Benchmarking Large Multimodal Models against Common Corruptions](https://arxiv.org/abs/2401.11943).
+
 ## Overview
 
 MMCBench is a comprehensive benchmarking framework designed to evaluate the robustness and self-consistency of Large Multimodal Models (LMMs) under common corruption scenarios. This framework focuses on cross-modal interactions involving text, image, and speech, covering essential generative tasks such as text-to-image, image-to-text, text-to-speech, and speech-to-text. Our benchmarking approach uses a novel methodology for selecting representative examples from large datasets and employs a consistent metric system for performance measurement across various cross-modalities.
