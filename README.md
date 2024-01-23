@@ -33,7 +33,7 @@ We present radar charts depicting the relative consistency scores of selected mo
   - `speech2text/`: Speech-to-Text generation tasks.
   - `text2image/`: Text-to-Image generation tasks.
   - `text2speech/`: Text-to-Speech generation tasks.
-  - 
+    
 ## Environment Setup 🌐
 
 To set up the environment for running MMCBench, we recommend using Conda, which can handle packages and dependencies effectively. Follow these steps to create and activate a Conda environment:
