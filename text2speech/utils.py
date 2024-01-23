@@ -62,7 +62,7 @@ class SentenceSimilarityCalculator(nn.Module):
         # Compute cosine similarity
         cos = nn.CosineSimilarity(dim=1)
         similarity_scores = cos(encoding_1, encoding_2)
-        return similarity_scores.cpu()
+        return similarity_scores.cpu().numpy()
 
 class SpeechContentSimilarity(nn.Module):
     """

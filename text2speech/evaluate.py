@@ -19,12 +19,12 @@ def compute_similarities(chunk, speech_generator, uni_model, args):
     :param args: Command line arguments.
     :return: Tuple of dictionaries containing similarities and speech data.
     """
-    path = chunk['path'].tolist()
+    paths = chunk['path'].tolist()
     transcription = chunk['transcription'].tolist()
     clean_speech = speech_generator(transcription)
 
-    similarities = {'uni_similarity': pd.DataFrame()}
-    speech_df = pd.DataFrame({'path': path, 'transcription': transcription})
+    similarities = {'uni_similarity': pd.DataFrame({'path': paths})}
+    speech_df = pd.DataFrame({'path': paths, 'transcription': transcription})
 
     if args.store_output:
         speech_df['clean'] = clean_speech
@@ -67,9 +67,10 @@ def main(args):
     directory = f"results/{args.model}"
     os.makedirs(directory, exist_ok=True)
 
-    speech_filename = f'{directory}/{args.level}_corruption_{args.degree}.pkl.gz'
-    with gzip.open(speech_filename, 'wb') as f:
-        all_speeches.to_pickle(f, compression='gzip')
+    if args.store_output:
+        speech_filename = f'{directory}/{args.level}_corruption_{args.degree}.pkl.gz'
+        with gzip.open(speech_filename, 'wb') as f:
+            all_speeches.to_pickle(f, compression='gzip')
 
     similarity_filename = f'{directory}/{args.level}_corruption_{args.degree}_uni_similarity.csv'
     all_similarities['uni_similarity'].to_csv(similarity_filename, index=False)
