@@ -24,6 +24,28 @@ We present radar charts depicting the relative consistency scores of selected mo
 
 ![Radar Charts](figs/radar.png)
 
+## Environment Setup 🌐
+
+To set up the environment for running MMCBench, we recommend using Conda, which can handle packages and dependencies effectively. Follow these steps to create and activate a Conda environment:
+
+1. **Create a Conda Environment**: Open your terminal and run the following command to create a new environment named `mmcbench_env`:
+
+   ```
+   conda create -n mmcbench python=3.9
+   ```
+
+2. **Activate the Environment**: Activate the newly created environment:
+
+   ```
+   conda activate mmcbench
+   ```
+
+3. **Install Required Packages**: Install all necessary packages using the `requirements.txt` file included in the repository:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
 ## Repository Structure 📂
 
 - `MMCBench/`

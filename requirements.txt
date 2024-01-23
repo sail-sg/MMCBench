@@ -1,0 +1,10 @@
+torch
+transformers
+gzip
+open_clip_torch
+tqdm
+pyarrow
+sentence_transformers
+numpy
+diffusers
+librosa
