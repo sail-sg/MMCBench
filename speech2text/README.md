@@ -21,6 +21,12 @@ We utilize the Common Voice 15.0 dataset, which includes approximately 1.75 mill
 
 ## Usage
 
+### Download Data
+
+The data is avialable at [huggingface](https://huggingface.co/datasets/javyduck/MMCBench/tree/main/speech2text). You can manually download the required files and place them into the `data` directory.
+
+Alternatively, for your convenience, you can simply execute the script `bash download_data.sh`. This script will automatically download and organize the necessary data into the data directory for you.
+
 ### Define Your Model
 
 Incorporate your model within the `TranscriptionGenerator` class, defined in `speech_architecture.py`. This class should accept audio input and generate corresponding transcriptions.

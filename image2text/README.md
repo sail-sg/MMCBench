@@ -24,6 +24,12 @@ From the LAION-Aesthetics dataset, we select 3 million images and further refine
 
 ## Usage
 
+### Download Data
+
+The data is avialable at [huggingface](https://huggingface.co/datasets/javyduck/MMCBench/tree/main/image2text). You can manually download the required files and place them into the `data` directory.
+
+Alternatively, for your convenience, you can simply execute the script `bash download_data.sh`. This script will automatically download and organize the necessary data into the data directory for you.
+
 ### Define Your Model
 
 Encapsulate your model within the `CaptionGenerator` class, as defined in `architecture.py`. This class should accept images as input and generate the corresponding text captions as output.

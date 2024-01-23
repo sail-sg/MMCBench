@@ -24,6 +24,14 @@ We present radar charts depicting the relative consistency scores of selected mo
 
 ![Radar Charts](figs/radar.png)
 
+## Repository Structure 📂
+
+- `MMCBench/`
+  - `image2text/`: Image-to-Text generation tasks.
+  - `speech2text/`: Speech-to-Text generation tasks.
+  - `text2image/`: Text-to-Image generation tasks.
+  - `text2speech/`: Text-to-Speech generation tasks.
+  - 
 ## Environment Setup 🌐
 
 To set up the environment for running MMCBench, we recommend using Conda, which can handle packages and dependencies effectively. Follow these steps to create and activate a Conda environment:
@@ -46,17 +54,9 @@ To set up the environment for running MMCBench, we recommend using Conda, which 
    pip install -r requirements.txt
    ```
 
-## Repository Structure 📂
-
-- `MMCBench/`
-  - `image2text/`: Image-to-Text generation tasks.
-  - `speech2text/`: Speech-to-Text generation tasks.
-  - `text2image/`: Text-to-Image generation tasks.
-  - `text2speech/`: Text-to-Speech generation tasks.
-
 ## Getting Started 🚦
 
-To begin using MMCBench, clone this repository and follow the setup instructions in each module. Detailed documentation for each step of the benchmarking process is provided.
+To begin using MMCBench, clone this repository and follow the setup instructions in each module. Detailed documentation for each step of the benchmarking process is provided. All the related corrupted data is available on [Hugging Face](https://huggingface.co/datasets/javyduck/MMCBench).
 
 ## Contributions 👐
 
