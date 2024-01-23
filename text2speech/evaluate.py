@@ -60,7 +60,6 @@ def main(args):
         chunk_similarities, chunk_speech = compute_similarities(chunk, speech_generator, uni_model, args)
         all_similarities['uni_similarity'] = pd.concat([all_similarities['uni_similarity'], chunk_similarities['uni_similarity']], ignore_index=True)
         speech_list.append(chunk_speech)
-        break
         
     all_speeches = pd.concat(speech_list, ignore_index=True)
 

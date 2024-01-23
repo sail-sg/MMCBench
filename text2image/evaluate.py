@@ -31,7 +31,7 @@ def compute_similarities(chunk, model, clip_model, device, clip_tokenizer, clip_
     image_features /= image_features.norm(dim=-1, keepdim=True)
     text_features /= text_features.norm(dim=-1, keepdim=True)
 
-    similarities = {'cross_similarity': pd.DataFrame(), 'uni_similarity': pd.DataFrame()}
+    similarities = {'cross_similarity': pd.DataFrame({'key': keys}), 'uni_similarity': pd.DataFrame({'key': keys})}
     image_df = pd.DataFrame({'key': keys, 'caption': captions})
 
     if args.store_output:
